@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang=pt-br dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <h3> Cadastro de Usuários </h3>
+      <hr>
+      <form class="form-group" action="index.html" method="post">
+        <div class="container form-group">
+          <div class="row">
+            <div class="col-sm-8">
+              <label class="negrito"> Nome</label>
+              <input class="form-control" type="text" name="nome" value="" placeholder="Nome">
+            </div>
+            <div class="col-sm-4">
+              <label class="negrito"> Matricula</label>
+              <input class="form-control" type="text" name="matricula" value="" placeholder="Matricula">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <label class="negrito"> Telefone</label>
+              <input class="form-control" type="text" name="telefone" value="" placeholder="Telefone">
+            </div>
+            <div class="col-sm-4">
+              <label class="negrito"> Celular</label>
+              <input class="form-control" type="text" name="celular" value="" placeholder="Celular">
+            </div>
+            <div class="col-sm-4">
+              <label class="negrito"> E-mail</label>
+              <input class="form-control" type="email" name="emial" value="" placeholder="nome@email.com.br">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+                <label class="negrito"> CPF</label>
+              <input class="form-control" type="text" name="cpf" value="" placeholder="999.999.999-99">
+            </div>
+            <div class="col-sm-4">
+              <label class="negrito"> Cargo</label>
+              <select class="form-control" name="">
+                <option value="">Vendedor</option>
+                <option value="">Coordenador de Venda</option>
+              </select>
+            </div>
+            <div class="col-sm-4 form-check">
+              <label class="negrito"> Login no Sistema</label><br>
+              &nbsp &nbsp
+               <input class="form-check-input" type="checkbox" name="" value="">
+              <label class="form-check-label"> Ativado</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <label class="negrito">Usuário</label>
+              <input class="form-control" type="text" name="usuario" value="" placeholder="Usuário">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <label class="negrito">Senha</label>
+              <input class="form-control" type="password" name="senha" value="" placeholder="Senha">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 ">
+              <label class="negrito">Confirmar Senha</label>
+              <input class="form-control" type="password" name="confirmar_senha" value="" placeholder="Confirmar Senha">
+            </div>
+          </div>
+        </div>
+        <div class="container form-group">
+          <input class="btn btn-primary" type="submit" name="cadastrar" value="Cadastrar"></input>
+        </div>
+      </form>
+  </body>
+</html>
