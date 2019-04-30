@@ -14,13 +14,106 @@
       <form class="form-group" action="index.html" method="post">
         <div class="container form-group">
           <div class="row">
-            <div class="col-sm-8">
-              <label class="negrito">Descrição</label>
-
-
+            <div class="col-sm-10">
+              <label class="negrito"  title="">Descrição</label>
+              <input class="form-control" type="text" name="descricao" value="" placeholder="Descrição">
             </div>
-
           </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <label class="negrito"  title="">Código de Barras</label>
+              <input class="form-control" type="text" name="codigo_barras" value="" placeholder="Código de Barras">
+            </div>
+            <div class="col-sm-5">
+            <label class="negrito" title="NCM (Nomenclatura Comum do Mercosul)">NCM (?)</label>
+            <input class="form-control" type="text" name="ncm" value="" placeholder="NCM (Nomenclatura Comum do Mercosul)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <label class="negrito"  title="">Unidade de Medida</label>
+              <select class="form-control">
+                <option value="">Unidade</option>
+                <option value="">KG</option>
+              </select>
+            </div>
+            <div class="col-sm-5">
+              <label class="negrito"  title="">Peso</label>
+              <input class="form-control" type="text" name="peso" value="" placeholder="Peso">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-10">
+              <label class="negrito"  title="">Localização no Estoque</label>
+              <input class="form-control" type="text" name="localizacao" value="" placeholder="Localização no Estoque">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5">
+              <label class="negrito"  title="">Estoque Atual</label>
+              <input class="form-control" type="text" name="estoque_atual" value="" placeholder="0">
+            </div>
+            <div class="col-sm-5">
+            <label class="negrito" title="">Estoque Mínimo</label>
+            <input class="form-control" type="text" name="estoque_minimo" value="" placeholder="0">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <label class="negrito" title="">Data da Ultima Compra</label>
+              <input class="form-control" type="date" name="ultima_compra" value="" placeholder="">
+            </div>
+            <div class="col-sm-3">
+                <label class="negrito" title="">Valor de Compra</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input class="form-control" type="number" step="any"  name="valor_compra" value="" placeholder="0,00">
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <label class="negrito" title="">Valor de Venda</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input class="form-control" type="number" step="any"  name="valor_venda" value="" placeholder="0,00">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+                <label class="negrito" title="saldo em estoque de venda">Saldo em Estoque</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input class="form-control" type="number" step="any"  name="saldo_estoque" value="" placeholder="0,00">
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <label class="negrito" title="saldo em estoque de venda">Custo Medio</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input class="form-control" type="number" step="any"  name="custo_medio" value="" placeholder="0,00">
+              </div>
+            </div>
+            <div class="col-sm-3">
+                <label class="negrito" title="">Custo Anual</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input class="form-control" type="number" step="any"  name="custo_anual" value="" placeholder="0,00">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container form-group">
+          <input class="btn btn-primary" type="submit" name="cadastrar" value="Cadastrar"></input>
         </div>
       </form>
 
